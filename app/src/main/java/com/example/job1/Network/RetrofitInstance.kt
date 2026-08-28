@@ -5,6 +5,9 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 
+/**
+ * Singleton object that provides an instance of [ProductApi] configured with Retrofit.
+ */
 object RetrofitInstance {
 
 

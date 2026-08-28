@@ -10,6 +10,11 @@ import com.example.job1.Model.Product
 import com.example.job1.databinding.ItemProductBinding
 
 
+/**
+ * Adapter for displaying a list of [Product] items in a RecyclerView.
+ *
+ * @property list The list of products to be displayed.
+ */
 class ProductAdapter(
     private val list: List<Product>
 ) : RecyclerView.Adapter<ProductAdapter.ProductViewHolder>() {
@@ -160,6 +165,11 @@ class ProductAdapter(
 
 
 
+    /**
+     * ViewHolder for the [ProductAdapter], holding the layout binding for each product item.
+     *
+     * @property binding The binding object for the product item layout.
+     */
     inner class ProductViewHolder(
         val binding: ItemProductBinding
     ):RecyclerView.ViewHolder(binding.root)

@@ -6,6 +6,10 @@ import com.bumptech.glide.Glide
 import com.example.job1.databinding.ActivityDetailsBinding
 
 
+/**
+ * Activity that displays the details of a specific product.
+ * It receives product information through intent extras.
+ */
 class ActivityDetails : AppCompatActivity() {
 
 

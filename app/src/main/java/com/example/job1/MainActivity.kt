@@ -15,6 +15,10 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
+/**
+ * The main activity of the application, responsible for displaying a list of products.
+ * It handles fetching products from the API and setting up the RecyclerView.
+ */
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
@@ -45,6 +49,10 @@ class MainActivity : AppCompatActivity() {
     }
 
 
+    /**
+     * Fetches the list of products from the [RetrofitInstance.api] and updates the RecyclerView.
+     * Disables the retry button while fetching and handles potential errors.
+     */
     private fun getProducts() {
 
 
