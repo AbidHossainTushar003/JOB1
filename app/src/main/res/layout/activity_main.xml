@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F8FA">
+
+
+    <!-- Header Title -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/headerCard"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:elevation="8dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="0dp"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+
+            android:text="Retrofit Store"
+
+            android:textColor="#212121"
+            android:textSize="26sp"
+            android:textStyle="bold"
+
+            android:letterSpacing="0.03"
+            android:padding="10dp"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <!-- Product List -->
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/recyclerView"
+
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:clipToPadding="false"
+
+        android:padding="12dp"
+
+        android:scrollbars="vertical"
+
+        tools:listitem="@layout/item_product"
+
+        app:layout_constraintTop_toBottomOf="@id/headerCard"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+
+    <!-- Retry Button -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+
+        android:id="@+id/fabRetry"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="20dp"
+
+        android:contentDescription="Retry"
+
+        android:src="@android:drawable/ic_popup_sync"
+
+        app:backgroundTint="#009688"
+
+        app:tint="@android:color/white"
+
+        app:elevation="12dp"
+
+        app:rippleColor="#80CBC4"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
